@@ -15,13 +15,15 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={siteTitle} />
         <Bio />
+        <h2 style={{marginTop: '0'}}>Local Blog List</h2>
+
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
+                style={{ marginTop: '0', marginBottom: '5'
+                  // marginBottom: rhythm(1 / 4),
                 }}
               >
                 <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
@@ -30,9 +32,11 @@ class BlogIndex extends React.Component {
               </h3>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+
             </div>
-          )
-        })}
+            )}
+          )}
+
       </div>
     )
   }

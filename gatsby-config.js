@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
+    title: 'Gatsby Example by Zorro',
+    author: 'Zorro Cheng',
     description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    siteUrl: 'zorro-gatsby.surge.sh',
+    siteTitle: 'Gatsby Example by Zorro',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [

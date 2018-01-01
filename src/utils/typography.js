@@ -7,7 +7,23 @@ Wordpress2016.overrideThemeStyles = () => ({
   },
 })
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(Wordpress2016);
+
+// const typography = new Typography(Wordpress2016, {
+//   baseFontSize: "18px",
+//   baseLineHeight: 1.45,
+//   headerFontFamily: [
+//     "Avenir Next",
+//     "Helvetica Neue",
+//     "Segoe UI",
+//     "Helvetica",
+//     "Arial",
+//     "sans-serif",
+//   ],
+//   bodyFontFamily: ["Georgia", "serif"],
+// });
+
+
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
